@@ -72,7 +72,6 @@ const INPUT_PCM_BITS_PER_SAMPLE = 16;
 
 export default class AzureConversationTranscriber {
   private _recognizer: speechsdk.ConversationTranscriber | null;
-  // private _recognizer: speechsdk.SpeechRecognizer | null;
   private _textList: TextEntry[];
   private _startTime: number;
   private _audioInputDeviceId: string | null;
@@ -239,14 +238,8 @@ export default class AzureConversationTranscriber {
         throw new Error('Failed to obtain auth token');
       }
 
-      // const endpoint = 'https://conversation-transcriber.cognitiveservices.azure.com/speech/universal/v2';
-      // const endpoint = 'wss://conversation-transcriber.cognitiveservices.azure.com/stt/speech/recognition/conversation/cognitiveservices/v1';
-      // const endpoint = 'conversation-transcriber.cognitiveservices.azure.com';
-      // const speechConfig = speechsdk.SpeechConfig.fromEndpoint(new URL(endpoint), '');
       const speechConfig = speechsdk.SpeechConfig.fromAuthorizationToken(tokenObj.authToken ?? '', tokenObj.region ?? '');
       speechConfig.speechRecognitionLanguage = this.options.speechLanguage || "ja-JP";
-      // speechConfig.endpointId = 'conversation-transcriber';
-      // speechConfig.authorizationToken = tokenObj.authToken ?? '';
 
       if (this.options.useInputStream)
       {

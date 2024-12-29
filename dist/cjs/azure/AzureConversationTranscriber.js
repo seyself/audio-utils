@@ -183,14 +183,8 @@ class AzureConversationTranscriber {
             if (!tokenObj.authToken) {
                 throw new Error('Failed to obtain auth token');
             }
-            // const endpoint = 'https://conversation-transcriber.cognitiveservices.azure.com/speech/universal/v2';
-            // const endpoint = 'wss://conversation-transcriber.cognitiveservices.azure.com/stt/speech/recognition/conversation/cognitiveservices/v1';
-            // const endpoint = 'conversation-transcriber.cognitiveservices.azure.com';
-            // const speechConfig = speechsdk.SpeechConfig.fromEndpoint(new URL(endpoint), '');
             const speechConfig = speechsdk.SpeechConfig.fromAuthorizationToken(tokenObj.authToken ?? '', tokenObj.region ?? '');
             speechConfig.speechRecognitionLanguage = this.options.speechLanguage || "ja-JP";
-            // speechConfig.endpointId = 'conversation-transcriber';
-            // speechConfig.authorizationToken = tokenObj.authToken ?? '';
             if (this.options.useInputStream) {
                 this._audioConfig = speechsdk.AudioConfig.fromStreamInput(this._pushStream);
             }
