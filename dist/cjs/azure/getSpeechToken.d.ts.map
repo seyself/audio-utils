@@ -1,0 +1,1 @@
+{"version":3,"file":"getSpeechToken.d.ts","sourceRoot":"","sources":["../../../src/azure/getSpeechToken.ts"],"names":[],"mappings":"AAEA,MAAM,WAAW,qBAAqB;IACpC,QAAQ,CAAC,EAAE,MAAM,CAAC;IAClB,MAAM,CAAC,EAAE,MAAM,CAAC;IAChB,MAAM,CAAC,EAAE,MAAM,CAAC;CACjB;AAED,wBAAsB,cAAc,CAAC,OAAO,CAAC,EAAE,qBAAqB,GAAG,OAAO,CAAC,MAAM,CAAC,CAyBrF"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"recorderDataToArrayBuffer.d.ts","sourceRoot":"","sources":["../../../src/functions/recorderDataToArrayBuffer.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,kBAAkB,EAAE,MAAM,+BAA+B,CAAC;AAEnE,wBAAsB,yBAAyB,CAAC,YAAY,EAAE,kBAAkB,GAAG,OAAO,CAAC,WAAW,CAAC,CAItG;AAGD,wBAAsB,wBAAwB,CAAC,WAAW,EAAE,WAAW,GAAG,OAAO,CAAC,WAAW,CAAC,CAI7F"}

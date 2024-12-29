@@ -16,6 +16,16 @@
       "import": "./dist/esm/*.js",
       "require": "./dist/cjs/*.js",
       "types": "./dist/esm/*.d.ts"
+    },
+    "./wavtools/*": {
+      "import": "./dist/esm/wavtools/*.js",
+      "require": "./dist/cjs/wavtools/*.js",
+      "types": "./dist/esm/wavtools/*.d.ts"
+    },
+    "./azure/*": {
+      "import": "./dist/esm/azure/*.js",
+      "require": "./dist/cjs/azure/*.js",
+      "types": "./dist/esm/azure/*.d.ts"
     }
   },
   "scripts": {

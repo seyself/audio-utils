@@ -1,0 +1,1 @@
+{"version":3,"file":"AudioRecorder.d.ts","sourceRoot":"","sources":["../../src/AudioRecorder.ts"],"names":[],"mappings":"AAAA,qBAAa,aAAa;IACxB,OAAO,CAAC,aAAa,CAA8B;IACnD,OAAO,CAAC,WAAW,CAAc;IACjC,OAAO,CAAC,WAAW,CAAkB;;YAMvB,IAAI;IAgBL,cAAc,IAAI,OAAO,CAAC,IAAI,CAAC;IAQ/B,aAAa,IAAI,OAAO,CAAC,IAAI,CAAC;IAiBpC,oBAAoB,IAAI,OAAO;CAGvC"}

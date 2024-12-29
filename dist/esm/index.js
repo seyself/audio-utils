@@ -9,7 +9,6 @@ export * from './functions/recorderDataToArrayBuffer.js';
 export * from './functions/stereoToMono.js';
 export * from './functions/trimSilenceFromWavPacker.js';
 export * from './functions/wavToAudioBuffer.js';
-
 export * from './AudioRecorder.js';
 export * from './AudioTrimmer.js';
 export * from './aws/AWSTranscribeStreaming.js';
@@ -19,5 +18,3 @@ export * from './azure/AzureSpeechRecognizer.js';
 export * from './azure/getSpeechToken.js';
 export * from './google/fetchSpeakerDiarization.js';
 export * from './google/GoogleSpeechRecognize.js';
-
-
