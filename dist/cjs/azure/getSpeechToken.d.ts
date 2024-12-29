@@ -3,5 +3,9 @@ export interface GetSpeechTokenOptions {
     apiKey?: string;
     region?: string;
 }
-export declare function getSpeechToken(options?: GetSpeechTokenOptions): Promise<string>;
+export interface GetSpeechTokenResponse {
+    data: string;
+    status: number;
+}
+export declare function getSpeechToken(options?: GetSpeechTokenOptions): Promise<GetSpeechTokenResponse>;
 //# sourceMappingURL=getSpeechToken.d.ts.map
