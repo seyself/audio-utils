@@ -1,0 +1,58 @@
+{
+  "name": "@seyself/audio-utils",
+  "version": "0.1.1",
+  "description": "",
+  "type": "module",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/esm/index.d.ts"
+    },
+    "./*": {
+      "import": "./dist/esm/*.js",
+      "require": "./dist/cjs/*.js",
+      "types": "./dist/esm/*.d.ts"
+    }
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build:esm": "tsc -p tsconfig.json",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build": "npm run clean && npm run build:esm && npm run build:cjs",
+    "watch": "tsc --watch",
+    "dev": "npm run build && node dist/index.js",
+    "test": "tsx test/index.ts",
+    "deploy": "node version_incr.js && npm run build && npm run commit && npm run push"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.703.0",
+    "@aws-sdk/client-transcribe": "^3.699.0",
+    "@aws-sdk/client-transcribe-streaming": "^3.699.0",
+    "@google-cloud/speech": "^6.7.0",
+    "@google-cloud/storage": "^7.14.0",
+    "axios": "^1.7.8",
+    "dotenv": "^16.4.5",
+    "microphone-stream": "^6.0.1",
+    "microsoft-cognitiveservices-speech-sdk": "^1.41.0",
+    "universal-cookie": "^7.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.18",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "minimatch": "^10.0.1",
+    "prettier": "^3.3.3",
+    "rimraf": "^6.0.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}
